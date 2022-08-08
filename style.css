@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+:root{
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Slightly-dark-blue: hsl(216, 50%, 16%);
+    --Very-dark-blue2: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%)
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: var(--Very-dark-blue1);
+}
+
+.container{
+    max-width: 350px;
+    margin: 90px auto;
+    background-color: var(--Slightly-dark-blue);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container .item{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image{
+    position: relative;
+}
+
+.image div{
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 93%;
+    background-color: hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+}
+
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.image .hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .title{
+    color: var(--White);
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.container .paragraph{
+    color:var(--Soft-blue);
+    font-weight: 300;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box img{
+    margin-right: 5px;
+}
+
+.box1, .box2{
+    display: flex;
+    align-items: center;  
+}
+
+.box1 .price{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.box2 .time{
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+
+.line{
+    padding: 0.5px;
+    background-color: var(--Very-dark-blue2);
+    margin: 20px 0px;
+}
+
+.profile img{
+    max-width: 50px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 200px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.profile span{
+    color: var(--Soft-blue);
+}
+
+.profile p{
+    color: var(--White);
+}
+
+.title:hover, .profile p:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+/* Made By Nougat */
+
+
+
+
+
